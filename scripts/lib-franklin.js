@@ -571,11 +571,11 @@ export async function waitForLCP(lcpBlocks) {
  * @param {Element} header header element
  * @returns {Promise}
  */
-export function loadHeader(header) {
+export async function loadHeader(header) {
   const headerBlock = buildBlock('header', '');
   header.append(headerBlock);
   decorateBlock(headerBlock);
-  return loadBlock(headerBlock);
+  return await loadBlock(headerBlock);
 }
 
 /**
