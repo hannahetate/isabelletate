@@ -66,6 +66,7 @@ body.appear {
 
 header {
   height: var(--nav-height);
+  overflow-x: hidden; 
 }
 
 h1, h2, h3,
