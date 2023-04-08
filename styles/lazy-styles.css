@@ -1,1 +1,15 @@
 /* below the fold CSS goes here */
+
+@font-face {
+  font-family: "new-spirit";
+  src: url("./new-spirit-400.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "new-spirit";
+  src: url("./new-spirit-700.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 700;
+}

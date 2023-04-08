@@ -31,6 +31,18 @@ function buildHeroBlock(main) {
   }
 }
 
+function wrapImages(main) {
+  const firstPicture = main.querySelector('picture');
+  if (firstPicture) {
+    const div = document.createElement('div');
+    div.classList.add('images');
+    firstPicture.before(div);
+    main.querySelectorAll('picture').forEach((picture) => {
+      div.append(picture);
+    });
+  }
+}
+
 /**
  * Builds all synthetic blocks in a container element.
  * @param {Element} main The container element
@@ -38,6 +50,7 @@ function buildHeroBlock(main) {
 function buildAutoBlocks(main) {
   try {
     buildHeroBlock(main);
+    wrapImages(main);
   } catch (error) {
     // eslint-disable-next-line no-console
     console.error('Auto Blocking failed', error);

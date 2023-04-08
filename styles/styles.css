@@ -20,8 +20,8 @@
   --text-color: #000;
 
   /* fonts */
-  --body-font-family: 'helvetica neue', helvetica, ubuntu, roboto, noto, sans-serif;
-  --heading-font-family: var(--body-font-family);
+  --body-font-family: 'helvetica neue', helvetica, sans-serif;
+  --heading-font-family: new-spirit, times;
   --fixed-font-family: 'Roboto Mono', menlo, consolas, 'Liberation Mono', monospace;
 
   /* body sizes */
@@ -36,9 +36,6 @@
   --heading-font-size-m: 24px;
   --heading-font-size-s: 20px;
   --heading-font-size-xs: 18px;
-
-  /* nav height */
-  --nav-height: 64px;
 
 }
 
@@ -59,8 +56,8 @@ body {
   font-family: var(--body-font-family);
   line-height: 1.6;
   color: var(--text-color);
-  background-color: var(--background-color);
   display: none;
+  background: linear-gradient(rgb(222, 211, 187), rgb(189, 210, 229), rgb(97, 132, 195));
 }
 
 body.appear {
